@@ -13,6 +13,13 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        sans: ['Apercu Pro', 'Apple System', 'BlinkMacSystemFont', 'Helvetica Neue', 'sans-serif'],
+      },
+      colors: {
+        selectionBg: 'rgb(207, 207, 206)',
+        selectionText: 'rgb(25, 25, 25)',
+      },
     },
   },
   plugins: [],
