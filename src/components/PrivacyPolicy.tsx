@@ -30,7 +30,7 @@ const PrivacyPolicy = () => {
         <div>
             <h2>Privacy Policy</h2>
             {options.map(option => (
-                <div key={option.id} className="mb-4">
+                <div key={option.id} className="mb-4 text-[14px]">
                     <p>{option.text}</p>
                     <div className='flex gap-4'>
                         <label className="block mb-2">

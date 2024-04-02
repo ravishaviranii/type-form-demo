@@ -13,13 +13,13 @@ const PasswordInput = ({ value, onChange }: any) => {
   };
 
   return (
-    <div className='relative mt-4 mb-2'>
+    <div className='relative mt-4 mb-8'>
       <input
         type={showPassword ? 'text' : 'password'}
         value={value}
         onChange={onChange}
         placeholder="Password"
-        className='shadow appearance-none border rounded w-[256px] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
+        className='shadow h-[38px]  appearance-none border rounded w-[256px] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
       />
       <button
         onClick={togglePasswordVisibility}
@@ -214,7 +214,7 @@ const SignupPage = () => {
                 </> : <form onSubmit={handleSubmit} className='flex flex-col justify-center items-center max-w-[256px]'>
                   <input
                     type="text"
-                    className='shadow appearance-none border rounded w-[256px] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
+                    className='shadow  bappearance-none border rounded h-[38px] w-[256px] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
                     value={email}
                     onChange={handleEmailChange}
                     placeholder="Email"
@@ -229,13 +229,13 @@ const SignupPage = () => {
                       Use 8 or more characters with a mix of letters, numbers and symbols
                     </p>
                   )}
-                  <div className='flex'>
+                  <div className='flex mb-4'>
                     <input
                       type="checkbox"
                       id="agreement"
                       className=" w-[50px] h-[50px] mr-2 accent-black"
                     />
-                    <label htmlFor="agreement">I agree to Typeform’s Terms of Service, Privacy Policy and Data Processing Agreement.</label>
+                    <label className='text-{14px}' htmlFor="agreement">I agree to Typeform’s <span className='underline'> Terms of Service,Privacy Policy </span> and <span className='underline'>  Data Processing Agreement.</span></label>
                   </div>
                   <Accordion />
 
